@@ -1,0 +1,201 @@
+
+
+* {
+    margin:0%;
+    
+}
+body {
+    background-color: lightgray;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin: 50px;*/ 
+    /*border: 2px solid black;*/
+    padding-left: 100px;
+    padding-right: 100px;
+    /*padding-top: 25px;*/
+    /*padding-bottom: 25px;*/
+    background-color: lightgray;
+    opacity: .9;
+    }
+
+ul {
+   
+}
+
+header img {
+    width: 100px; 
+    height: auto;
+
+}
+ header li {
+    display: inline;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 15px;
+ }
+
+ .page-1 {
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 20%;
+    background-color: antiquewhite;
+    padding-bottom: 20px;
+    
+ }
+
+ h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 20px;
+    font-family: monospace;
+ }
+ .profile-pic {
+    display: flex;
+    /*border: 1px solid black;*/
+    justify-content: center;
+ }
+
+ .profile-pic img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+
+ }
+
+ .about-me {
+    width: 40%;
+    display: flexbox;
+    margin-left: 30%;
+ }
+ .about-me h2 {
+    text-align: center;
+    font-size: 38px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .about-me p {
+    text-align: center;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ footer {
+    margin-top: 30px;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+    position: bottom; 
+ }
+
+ footer h3 {
+    text-align: center;
+    color: white;
+ }
+                     /* contact-page*/
+ .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+ }
+
+ .contact p {
+    color: white;
+ }
+
+.page-2 {
+    display: flex;
+    margin-top: 20px;
+    /*margin-left: 20%;*/
+    margin-right: 20%; 
+ }
+                     /*Projects-page*/
+ .projects {
+    margin: 20px 30px;
+ }
+ .projects h2 {
+    font-size: 100px;
+ }
+ .projects li {
+    font-size: 25px;
+    list-style: none;
+    line-height: 3em;
+    
+ }
+ .projects li a {
+    text-decoration: none;
+ }
+
+ .work-xp { 
+   width: 100%;
+   margin-left: 30%;
+   margin-top: 25%;
+ }
+ .work-xp h2 {
+    font-size: 60px;
+    padding-bottom: 40px;
+ }
+ .work-xp ul {
+    list-style: none;
+ }
+ .work-xp h3 {
+    font-size: 50px;
+ }
+ .work-xp p {
+    font-size: 25px;
+ }
+
+ .background {
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   background-color: grey;
+   opacity: .4;
+   right: 45%;
+   top: 20%;
+   border-radius: 50%;
+   z-index: -10;
+ }
+ .background-2 {
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   background-color: grey;
+   left: 10%;
+   top: 60%;
+ }
+ .background-3 {
+   position: absolute;
+   width: 700px;
+   height: 700px;
+   border-radius: 50%;
+   left: 60%;
+   top: -30%; 
+   background-color: grey;
+   opacity: 25%;
+ }
+
+               /*Skills-page*/
+.skills-container {
+   
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-top: 50px;
+   padding: 50px 20px;
+   background-color: lightgoldenrodyellow;
+}
+.skills-container ul {
+   margin-top: 50px;
+}
+.skills-container li {
+   margin-left: 15%;
+}
+   
