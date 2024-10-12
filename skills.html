@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skills</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
+    <script src="./script.js" defer></script>
     <header>
         <img src="./resources/h.s.logo.jpg" alt="logo">
         <ul>
@@ -27,9 +29,17 @@
             </ul>
         </div>
 
-        <div class="fortune">
-            <h2>Fortune Teller</h2>
-            
+        <div class="comment">
+            <h1>Ask the football Guru</h1>
+            <h2>Will Your Team Win this week?</h2>
+            <div class="input-container">
+                <label for="comment">Who is your collee football team?</label>
+                <input type="text" id="comment">
+                <button id="submit-button">submit</button>
+            </div>
+            <div class="output-container">
+                <p id="sentence"></p>
+            </div>
         </div>
 
     </main>

@@ -23,7 +23,6 @@ header {
     /*padding-top: 25px;*/
     /*padding-bottom: 25px;*/
     background-color: lightgray;
-    opacity: .9;
     }
 
 ul {
@@ -41,10 +40,34 @@ header img {
     padding: 10px;
     font-weight: 700;
     border-radius: 15px;
+   
+ }
+ header li a {
+   text-decoration: none;
+   color: black;
+ }
+ header li a:hover {
+   color: rgb(242, 52, 87);
+   transition: all 0.3s ease;
  }
 
+ @media screen and (max-width: 600px) {
+   header {
+      margin: 0; 
+      padding: 0;
+   }
+   header li {
+     border: none;
+   }
+   header li a {
+      font-size: larger;
+   }
+ }
+
+
+/* main page*/
  .page-1 {
-    border: 1px solid black;
+    border: 3px solid black;
     width: 60%;
     margin-left: 20%;
     background-color: antiquewhite;
@@ -72,9 +95,9 @@ header img {
  }
 
  .about-me {
-    width: 40%;
+    width: 75%;
     display: flexbox;
-    margin-left: 30%;
+    margin-left: 12%; 
  }
  .about-me h2 {
     text-align: center;
@@ -86,6 +109,14 @@ header img {
     font-size: 22px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
+ @media screen and (max-width: 800px) {
+   .about-me p{
+     font-size: 1rem; 
+     font-weight: 400;
+   }
+ }
+
+
  footer {
     margin-top: 30px;
     background-color: black;
@@ -111,32 +142,50 @@ header img {
  }
 
 .page-2 {
-    display: flex;
+    /*display: flex;*/
     margin-top: 20px;
     /*margin-left: 20%;*/
-    margin-right: 20%; 
+    
  }
                      /*Projects-page*/
  .projects {
     margin: 20px 30px;
  }
  .projects h2 {
+   margin-left: 20%;
     font-size: 100px;
+ }
+ .projects ul {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
  }
  .projects li {
     font-size: 25px;
     list-style: none;
-    line-height: 3em;
-    
+    padding: 1em;
+    border: 1px solid black;
+    max-width: 400px;
+    background-color: darkgray;
+ }
+ .projects p {
+   font-size: smaller;
  }
  .projects li a {
     text-decoration: none;
  }
+ 
+ .project-pic img {
+   width: 100px; 
+   height: auto;
+   float: inline-end;
+   border-radius: 15px;
+ }
 
  .work-xp { 
    width: 100%;
-   margin-left: 30%;
-   margin-top: 25%;
+   margin-left: 10%;
+  margin-top: 5%;
  }
  .work-xp h2 {
     font-size: 60px;
@@ -144,9 +193,16 @@ header img {
  }
  .work-xp ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .work-xp li {
+   border: 1px solid black;
+   padding: 3em;
+   background-color: darkgray;
  }
  .work-xp h3 {
-    font-size: 50px;
+    font-size: 40px;
  }
  .work-xp p {
     font-size: 25px;
@@ -171,6 +227,8 @@ header img {
    background-color: grey;
    left: 10%;
    top: 60%;
+   z-index: -10;
+   opacity: .7;
  }
  .background-3 {
    position: absolute;
@@ -181,21 +239,125 @@ header img {
    top: -30%; 
    background-color: grey;
    opacity: 25%;
+   z-index: -10;
  }
 
                /*Skills-page*/
 .skills-container {
-   
    margin-left: 30%;
    margin-right: 30%;
    margin-top: 50px;
    padding: 50px 20px;
-   background-color: lightgoldenrodyellow;
+   background-color: antiquewhite;
 }
 .skills-container ul {
    margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 .skills-container li {
-   margin-left: 15%;
+   margin-left: 1em;
+   padding: 2em;
+   border: 1px solid black;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+   
+}
+.skills-container li:hover {
+   background-color: grey;
 }
    
+.comment {
+   border: 1px solid black;
+   margin: 60px 25%; 
+   padding-left: 2em;
+   background-color: darkgray;
+}
+.comment h2 {
+   text-align: center;
+   font-size: 45px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.output-container{
+   margin: 25px 15%; 
+   border: 1px solid black;
+   height: 4em;
+   background-color: antiquewhite;
+}
+.output-container p {
+   text-align: center;
+   font-size: larger;
+   margin-top: 1em;
+}
+
+@media screen and (max-width: 800px) {
+   .comment h1 {
+      font-size: 40px;
+   }
+   .comment h2 {
+      font-size: 30px;
+   }
+}
+/* contact page */
+.title {
+   text-align: center;
+   font-size: 3em;
+}
+.contact-list {
+   /*border: 1px solid black;*/
+   padding-top: 4em; 
+   padding-bottom: 4em; 
+   line-height: 1.5;
+   font-size: larger;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.contact-list ul {
+   display: flex;
+   flex-wrap: wrap;
+}
+.contact-list li {
+   width: 300px;
+   height: 100px;
+   list-style: none;
+   border: 1px solid black;
+   padding: 1em;
+   font-weight: 800;
+}
+.square {
+   position: absolute;  
+   height: 500px; 
+   width: 500px;
+   left: 30%; 
+   top: 30%;
+   background-color: darkgrey; 
+   opacity: 20%;
+}
+.square-2 {
+   position: absolute;
+   height: 300px;
+   width: 300px;
+   left: 15%; 
+   right: 60%; 
+   background-color: darkgray;  
+}
+.square-3 {
+   position: absolute;
+   height: 500px;
+   width: 1000px; 
+   left: 50%; 
+   top: 80%; 
+   background-color: darkgray;
+   opacity: .2;
+}
+.square-4 {
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   top: -15%; 
+   left: 70%;
+   background-color: darkgray;
+   opacity: .4;
+}
